@@ -1,0 +1,1394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/full"
+        android:layout_width="105dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="dis"
+        android:text="FULL"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="105dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="editfunc"
+        android:text="EDIT"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="259dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#4CAF50"
+        android:onClick="backbutton"
+        android:text="BACK"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="105dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#D810FA"
+        android:onClick="clearfunc"
+        android:text="CLEAR"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/cell"
+        android:layout_width="105dp"
+        android:layout_height="53dp"
+        android:alpha="0.3"
+        android:backgroundTint="#E91E63"
+        android:onClick="cellfunc"
+        android:text="CELL"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.873" />
+
+    <Button
+        android:id="@+id/row"
+        android:layout_width="105dp"
+        android:layout_height="53dp"
+        android:alpha="0.3"
+        android:backgroundTint="#E91E63"
+        android:onClick="rowfunc"
+        android:text="ROW"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872" />
+
+    <Button
+        android:id="@+id/options"
+        android:layout_width="228dp"
+        android:layout_height="93dp"
+        android:alpha="0.3"
+        android:backgroundTint="#9C27B0"
+        android:onClick="onPress"
+        android:text="OPTIONS"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.901"
+        app:rippleColor="#673AB7" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid"
+        android:layout_width="414dp"
+        android:layout_height="410dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/f882a31fc0d742ab91ba6b2f29a6aea5"
+        android:backgroundTint="#0C0C0C"
+        android:visibility="visible"
+        app:columnCount="9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="9">
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="64"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="7" />
+
+        <EditText
+            android:id="@+id/editTextNumber66"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="53"
+            android:textAlignment="center"
+            app:layout_column="8"
+            app:layout_row="5" />
+
+        <EditText
+            android:id="@+id/editTextNumber65"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="52"
+            android:textAlignment="center"
+            app:layout_column="7"
+            app:layout_row="5" />
+
+        <EditText
+            android:id="@+id/editTextNumber3"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#02FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="0"
+            android:textAlignment="center"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/editTextNumber4"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#02FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="1"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/editTextNumber5"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#02FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="2"
+            android:textAlignment="center"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/editTextNumber6"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#02FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="3"
+            android:textAlignment="center"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/editTextNumber7"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="4"
+            android:textAlignment="center"
+            app:layout_column="4"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/editTextNumber8"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="5"
+            android:textAlignment="center"
+            app:layout_column="5"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/editTextNumber9"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="6"
+            android:textAlignment="center"
+            app:layout_column="6"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/editTextNumber10"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="7"
+            android:textAlignment="center"
+            app:layout_column="7"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/editTextNumber12"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="8"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            app:layout_column="8"
+            app:layout_row="0" />
+
+        <EditText
+            android:id="@+id/editTextNumber13"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="9"
+            android:textAlignment="center"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/editTextNumber14"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="10"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/editTextNumber15"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="11"
+            android:textAlignment="center"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/editTextNumber16"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="12"
+            android:textAlignment="center"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/editTextNumber17"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="13"
+            android:textAlignment="center"
+            app:layout_column="4"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/editTextNumber18"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="14"
+            android:textAlignment="center"
+            app:layout_column="5"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/editTextNumber19"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="15"
+            android:textAlignment="center"
+            app:layout_column="6"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/editTextNumber20"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="16"
+            android:textAlignment="center"
+            app:layout_column="7"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/editTextNumber21"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="17"
+            android:textAlignment="center"
+            app:layout_column="8"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/editTextNumber22"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="18"
+            android:textAlignment="center"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/editTextNumber23"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="19"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/editTextNumber24"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="20"
+            android:textAlignment="center"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/editTextNumber25"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="21"
+            android:textAlignment="center"
+            app:layout_column="3"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/editTextNumber26"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="22"
+            android:textAlignment="center"
+            app:layout_column="4"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/editTextNumber27"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="23"
+            android:textAlignment="center"
+            app:layout_column="5"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/editTextNumber28"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="24"
+            android:textAlignment="center"
+            app:layout_column="6"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/editTextNumber29"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="25"
+            android:textAlignment="center"
+            app:layout_column="7"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/editTextNumber30"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="26"
+            android:textAlignment="center"
+            app:layout_column="8"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/editTextNumber31"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="27"
+            android:textAlignment="center"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <EditText
+            android:id="@+id/editTextNumber33"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="28"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <EditText
+            android:id="@+id/editTextNumber34"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="29"
+            android:textAlignment="center"
+            app:layout_column="2"
+            app:layout_row="3" />
+
+        <EditText
+            android:id="@+id/editTextNumber35"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="30"
+            android:textAlignment="center"
+            app:layout_column="3"
+            app:layout_row="3" />
+
+        <EditText
+            android:id="@+id/editTextNumber36"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="31"
+            android:textAlignment="center"
+            app:layout_column="4"
+            app:layout_row="3" />
+
+        <EditText
+            android:id="@+id/editTextNumber37"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="32"
+            android:textAlignment="center"
+            app:layout_column="5"
+            app:layout_row="3" />
+
+        <EditText
+            android:id="@+id/editTextNumber38"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="33"
+            android:textAlignment="center"
+            app:layout_column="6"
+            app:layout_row="3" />
+
+        <EditText
+            android:id="@+id/editTextNumber39"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="34"
+            android:textAlignment="center"
+            app:layout_column="7"
+            app:layout_row="3" />
+
+        <EditText
+            android:id="@+id/editTextNumber40"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="35"
+            android:textAlignment="center"
+            app:layout_column="8"
+            app:layout_row="3" />
+
+        <EditText
+            android:id="@+id/editTextNumber41"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="36"
+            android:textAlignment="center"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <EditText
+            android:id="@+id/editTextNumber42"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="37"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <EditText
+            android:id="@+id/editTextNumber43"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="38"
+            android:textAlignment="center"
+            app:layout_column="2"
+            app:layout_row="4" />
+
+        <EditText
+            android:id="@+id/editTextNumber44"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="39"
+            android:textAlignment="center"
+            app:layout_column="3"
+            app:layout_row="4" />
+
+        <EditText
+            android:id="@+id/editTextNumber45"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="40"
+            android:textAlignment="center"
+            app:layout_column="4"
+            app:layout_row="4" />
+
+        <EditText
+            android:id="@+id/editTextNumber46"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="41"
+            android:textAlignment="center"
+            app:layout_column="5"
+            app:layout_row="4" />
+
+        <EditText
+            android:id="@+id/editTextNumber47"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="42"
+            android:textAlignment="center"
+            app:layout_column="6"
+            app:layout_row="4" />
+
+        <EditText
+            android:id="@+id/editTextNumber48"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="43"
+            android:textAlignment="center"
+            app:layout_column="7"
+            app:layout_row="4" />
+
+        <EditText
+            android:id="@+id/editTextNumber49"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="44"
+            android:textAlignment="center"
+            app:layout_column="8"
+            app:layout_row="4" />
+
+        <EditText
+            android:id="@+id/editTextNumber53"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="45"
+            android:textAlignment="center"
+            app:layout_column="0"
+            app:layout_row="5" />
+
+        <EditText
+            android:id="@+id/editTextNumber54"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="46"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="5" />
+
+        <EditText
+            android:id="@+id/editTextNumber55"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="47"
+            android:textAlignment="center"
+            app:layout_column="2"
+            app:layout_row="5" />
+
+        <EditText
+            android:id="@+id/editTextNumber56"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="48"
+            android:textAlignment="center"
+            app:layout_column="3"
+            app:layout_row="5" />
+
+        <EditText
+            android:id="@+id/editTextNumber57"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="49"
+            android:textAlignment="center"
+            app:layout_column="4"
+            app:layout_row="5" />
+
+        <EditText
+            android:id="@+id/editTextNumber62"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="50"
+            android:textAlignment="center"
+            app:layout_column="5"
+            app:layout_row="5" />
+
+        <EditText
+            android:id="@+id/editTextNumber63"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="51"
+            android:textAlignment="center"
+            app:layout_column="6"
+            app:layout_row="5" />
+
+        <EditText
+            android:id="@+id/editTextNumber67"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="54"
+            android:textAlignment="center"
+            app:layout_column="0"
+            app:layout_row="6" />
+
+        <EditText
+            android:id="@+id/editTextNumber68"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="55"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="6" />
+
+        <EditText
+            android:id="@+id/editTextNumber69"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="56"
+            android:textAlignment="center"
+            app:layout_column="2"
+            app:layout_row="6" />
+
+        <EditText
+            android:id="@+id/editTextNumber70"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="57"
+            android:textAlignment="center"
+            app:layout_column="3"
+            app:layout_row="6" />
+
+        <EditText
+            android:id="@+id/editTextNumber71"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="58"
+            android:textAlignment="center"
+            app:layout_column="4"
+            app:layout_row="6" />
+
+        <EditText
+            android:id="@+id/editTextNumber72"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="59"
+            android:textAlignment="center"
+            app:layout_column="5"
+            app:layout_row="6" />
+
+        <EditText
+            android:id="@+id/editTextNumber73"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="60"
+            android:textAlignment="center"
+            app:layout_column="6"
+            app:layout_row="6" />
+
+        <EditText
+            android:id="@+id/editTextNumber74"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="61"
+            android:textAlignment="center"
+            app:layout_column="7"
+            app:layout_row="6" />
+
+        <EditText
+            android:id="@+id/editTextNumber75"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="62"
+            android:textAlignment="center"
+            app:layout_column="8"
+            app:layout_row="6" />
+
+        <EditText
+            android:id="@+id/editTextNumber76"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="63"
+            android:textAlignment="center"
+            app:layout_column="0"
+            app:layout_row="7" />
+
+        <EditText
+            android:id="@+id/editTextNumber77"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="73"
+            android:textAlignment="center"
+            app:layout_column="1"
+            app:layout_row="8" />
+
+        <EditText
+            android:id="@+id/editTextNumber78"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="65"
+            android:textAlignment="center"
+            app:layout_column="2"
+            app:layout_row="7" />
+
+        <EditText
+            android:id="@+id/editTextNumber79"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="66"
+            android:textAlignment="center"
+            app:layout_column="3"
+            app:layout_row="7" />
+
+        <EditText
+            android:id="@+id/editTextNumber80"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="67"
+            android:textAlignment="center"
+            app:layout_column="4"
+            app:layout_row="7" />
+
+        <EditText
+            android:id="@+id/editTextNumber81"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="68"
+            android:textAlignment="center"
+            app:layout_column="5"
+            app:layout_row="7" />
+
+        <EditText
+            android:id="@+id/editTextNumber82"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="69"
+            android:textAlignment="center"
+            app:layout_column="6"
+            app:layout_row="7" />
+
+        <EditText
+            android:id="@+id/editTextNumber84"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="70"
+            android:textAlignment="center"
+            app:layout_column="7"
+            app:layout_row="7" />
+
+        <EditText
+            android:id="@+id/editTextNumber85"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="71"
+            android:textAlignment="center"
+            app:layout_column="8"
+            app:layout_row="7" />
+
+        <EditText
+            android:id="@+id/editTextNumber86"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="72"
+            android:textAlignment="center"
+            app:layout_column="0"
+            app:layout_row="8" />
+
+        <EditText
+            android:id="@+id/editTextNumber88"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="74"
+            android:textAlignment="center"
+            app:layout_column="2"
+            app:layout_row="8" />
+
+        <EditText
+            android:id="@+id/editTextNumber89"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="75"
+            android:textAlignment="center"
+            app:layout_column="3"
+            app:layout_row="8" />
+
+        <EditText
+            android:id="@+id/editTextNumber90"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="76"
+            android:textAlignment="center"
+            app:layout_column="4"
+            app:layout_row="8" />
+
+        <EditText
+            android:id="@+id/editTextNumber91"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="77"
+            android:textAlignment="center"
+            app:layout_column="5"
+            app:layout_row="8" />
+
+        <EditText
+            android:id="@+id/editTextNumber95"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="78"
+            android:textAlignment="center"
+            app:layout_column="6"
+            app:layout_row="8" />
+
+        <EditText
+            android:id="@+id/editTextNumber96"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="79"
+            android:textAlignment="center"
+            app:layout_column="7"
+            app:layout_row="8" />
+
+        <EditText
+            android:id="@+id/editTextNumber97"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:onClick="btag"
+            android:tag="80"
+            android:textAlignment="center"
+            app:layout_column="8"
+            app:layout_row="8" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/col"
+        android:layout_width="105dp"
+        android:layout_height="53dp"
+        android:alpha="0.3"
+        android:backgroundTint="#E91E63"
+        android:onClick="colfunc"
+        android:text="COLUMN"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.873" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/numgrid"
+        android:layout_width="295dp"
+        android:layout_height="260dp"
+        android:visibility="gone"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.386"
+        app:rowCount="4">
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="98dp"
+            android:layout_height="58dp"
+            android:onClick="numfunc"
+            android:tag="1"
+            android:text="1"
+            android:textColorLink="#FAFAFA"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="98dp"
+            android:layout_height="58dp"
+            android:onClick="numfunc"
+            android:tag="2"
+            android:text="2"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="98dp"
+            android:layout_height="58dp"
+            android:onClick="numfunc"
+            android:tag="3"
+            android:text="3"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="98dp"
+            android:layout_height="58dp"
+            android:onClick="numfunc"
+            android:tag="4"
+            android:text="4"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="98dp"
+            android:layout_height="58dp"
+            android:onClick="numfunc"
+            android:tag="5"
+            android:text="5"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="98dp"
+            android:layout_height="58dp"
+            android:onClick="numfunc"
+            android:tag="6"
+            android:text="6"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="98dp"
+            android:layout_height="58dp"
+            android:onClick="numfunc"
+            android:tag="7"
+            android:text="7"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="98dp"
+            android:layout_height="58dp"
+            android:onClick="numfunc"
+            android:tag="8"
+            android:text="8"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="98dp"
+            android:layout_height="58dp"
+            android:onClick="numfunc"
+            android:tag="9"
+            android:text="9"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button19"
+            android:layout_width="98dp"
+            android:layout_height="85dp"
+            android:onClick="exit"
+            android:text="Exit"
+            app:layout_column="1"
+            app:layout_row="3" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/mainclear"
+        android:layout_width="228dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#FF5722"
+        android:onClick="fullclear"
+        android:text="Full Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.991" />
+
+    <Button
+        android:id="@+id/number"
+        android:layout_width="228dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#F4F1F1"
+        android:onClick="ennum"
+        android:text="Enter Numbers"
+        android:textColor="#0B0A0A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.749" />
+
+    <Button
+        android:id="@+id/backb"
+        android:layout_width="169dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#F4F1F1"
+        android:onClick="backbfunc"
+        android:text="BACK"
+        android:textColor="#070707"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.873" />
+
+    <TextView
+        android:id="@+id/cellstat"
+        android:layout_width="383dp"
+        android:layout_height="39dp"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/num"
+        android:layout_width="105dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="display"
+        android:text="NUMBER"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
